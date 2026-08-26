@@ -1,0 +1,81 @@
+=====================================================
+FICHA TECNICA - JEEP WRANGLER JK 2009 2.8 CRD
+=====================================================
+
+VEHICULO
+- Jeep Wrangler JK, 2009
+- Motor: VM Motori RA428 2.8L CRD turbodiesel (4 cil, 16v)
+- Inyeccion: Bosch Common Rail (ECU EDC16CP31)
+- Transmision: automatica 545RFE 5 velocidades
+- Kilometraje: 320.000 km aprox.
+- Historial de duenos: varios anteriores (mantenimiento parcial)
+
+MODIFICACIONES DEL VEHICULO
+- Amortiguadores y parachoques reforzados (mas pesado).
+  Dato general: no afecta el arranque ni la ETC.
+- Luces adicionales con empalmes sobre el ramal original,
+  ANTERIORES a la falla. Sospechoso de la causa raiz.
+
+SINTOMA ACTUAL
+- Motor de partida gira pero NO arranca (no inyecta)
+- Luz ETC encendida (rayo rojo en el tablero)
+- Fallo intermitente: "se arregla y se vuelve a danar"
+- Scanner no arrojo codigos en el momento
+
+HISTORIAL (orden cronologico real)
+1. Empalmes de luces adicionales instalados sobre el ramal
+   (anteriores a la falla).
+2. Aparecio el fallo intermitente ORIGINAL: ETC + no arranca.
+   ESTE PROBLEMA ES ANTERIOR AL RECTIFICADO.
+3. El ramal electrico del motor ya estaba "muy maltratado"
+   (preexistente).
+4. Motor rectificado completo: dano colateral (manguera mal
+   sujeta, ramal movido). Empeoro la falla.
+5. Se cambio el sensor de ciguenal (CKP) por supuesta falla:
+   el sintoma NO cambio.
+6. Auto en campo con roedores (no confirmado).
+
+PUNTOS CRITICOS DE ESTE MODELO (fallas cronicas)
+1. Cableado y conector del sensor CKP (ciguenal): cable
+   quebradizo, conector que se afloja. Si la ECU no recibe
+   senal CKP, corta la inyeccion y enciende ETC.
+   --> SOSPECHOSO NRO 1
+2. Tierras G100 y G101 en el block: flojas u oxidadas.
+3. Zona del ramal cerca del turbo: el calor cristaliza el
+   aislante con los anos (causa preexistente).
+4. Mangueras de combustible: O-ring y abrazaderas (aire al
+   common-rail impide el arranque).
+5. TIPM (modulo de potencia): corrosion interna.
+6. Empalmes de luces sobre el ramal original (anteriores a
+   la falla): cables pelados, empalmes flojos, sobrecarga.
+
+HIPOTESIS MAS PROBABLE (en orden)
+1. Cable danado en el ramal del motor por empalmes de luces
+   o calor del turbo (AMBOS ANTERIORES al rectificado). Si el
+   dano toca el cable del CKP: ETC + sin inyeccion.
+2. Tierra G100/G101 floja u oxidada.
+3. Aire en el sistema common-rail por la manguera suelta
+   (secundario, del rectificado).
+
+PRUEBA RAPIDA SUGERIDA
+- Verificar continuidad y aislamiento de los 3 cables del CKP
+  desde el conector hasta la ECU.
+- Verificar tension en el conector CKP (5V, masa y senal).
+- Revisar y desarmar los empalmes de las luces: aislar bien,
+  retirar conexiones flojas.
+- Apretar y limpiar tierras G100/G101.
+- Purgar aire del filtro de combustible y apretar abrazaderas.
+- Proteger el ramal contra roedores (cinta anti-roedores o
+  malla): el campo ya mordio otro vehiculo 3 veces.
+
+NOTA PARA EL MECANICO
+- La falla es ANTERIOR al rectificado: no buscar el dano solo
+  en lo que se movio al desarmar el motor.
+- Fallo intermitente = contacto que se corta con calor o
+  vibracion. Revisar primero los empalmes de luces y el tramo
+  cerca del turbo. NO cambiar piezas al azar.
+- IMPORTANTE: el vehiculo duerme a la intemperie en un campo
+  con roedores que ya mordieron otro auto 3 veces. Reparar el
+  ramal y PROTEGERLO contra roedores (cinta anti-roedores o
+  malla), o la falla volvera.
+=====================================================
