@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ficha Técnica — Jeep Wrangler JK 2009 2.8 CRD</title>
+<style>
+  :root {
+    --bg: #14171c;
+    --card: #1e232b;
+    --card2: #242a34;
+    --border: #333b47;
+    --text: #e8eaed;
+    --muted: #9aa3b0;
+    --amber: #f5a623;
+    --amber-soft: #3a2f1a;
+    --red: #ff5a5a;
+    --red-soft: #3a1e1e;
+    --green: #4cd97b;
+    --green-soft: #1e3a28;
+    --blue: #5aa7ff;
+    --blue-soft: #1e2a3a;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    padding: 24px 16px 60px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 760px; margin: 0 auto; }
+
+  header {
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--amber);
+    background: var(--card);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+  header .marca {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: var(--amber);
+    font-weight: 700;
+  }
+  header h1 {
+    font-size: 26px;
+    margin: 6px 0 4px;
+    letter-spacing: -0.3px;
+  }
+  header .sub {
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .badge {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 11px;
+    border-radius: 20px;
+    border: 1px solid;
+    letter-spacing: 0.4px;
+  }
+  .b-red   { color: var(--red);   border-color: var(--red);   background: var(--red-soft); }
+  .b-amber { color: var(--amber); border-color: var(--amber); background: var(--amber-soft); }
+  .b-blue  { color: var(--blue);  border-color: var(--blue);  background: var(--blue-soft); }
+
+  section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+  }
+  section h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--amber);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  section h2 .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px; height: 24px;
+    background: var(--amber-soft);
+    border: 1px solid var(--amber);
+    color: var(--amber);
+    border-radius: 6px;
+    font-size: 13px;
+    letter-spacing: 0;
+  }
+
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 24px; }
+  .kv { display: flex; gap: 8px; font-size: 14px; }
+  .kv .k { color: var(--muted); min-width: 110px; }
+  .kv .v { font-weight: 600; }
+
+  ul { list-style: none; }
+  li { position: relative; padding-left: 20px; margin-bottom: 9px; font-size: 14px; }
+  li::before {
+    content: "▸";
+    position: absolute;
+    left: 2px;
+    color: var(--amber);
+  }
+
+  ol.historia { list-style: none; counter-reset: paso; }
+  ol.historia li {
+    counter-increment: paso;
+    padding-left: 34px;
+    position: relative;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  ol.historia li::before {
+    content: counter(paso);
+    position: absolute;
+    left: 0; top: 1px;
+    width: 22px; height: 22px;
+    background: var(--card2);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--amber);
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sospechoso {
+    background: var(--red-soft);
+    border: 1px solid var(--red);
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  .sospechoso strong { color: var(--red); }
+
+  .hip { border-left: 3px solid var(--amber); padding: 6px 0 6px 14px; margin-bottom: 12px; }
+  .hip .tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--amber);
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+  .hip p { font-size: 14px; }
+
+  .check li::before { content: "☐"; color: var(--green); left: 0; }
+  .check li { padding-left: 24px; }
+
+  .nota {
+    background: var(--card2);
+    border: 1px dashed var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    font-size: 14px;
+    color: var(--text);
+  }
+  .nota .titulo {
+    font-weight: 700;
+    color: var(--amber);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 28px;
+  }
+  footer .sello {
+    display: inline-block;
+    border: 2px solid var(--amber);
+    color: var(--amber);
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 8px 22px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 560px) {
+    .grid { grid-template-columns: 1fr; }
+    header h1 { font-size: 22px; }
+  }
+
+  @media print {
+    body { background: #fff; color: #111; padding: 0; }
+    section, header { background: #fff; border-color: #ccc; }
+    .badge, .sospechoso { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    section h2 { color: #b07400; }
+    footer .sello { color: #b07400; border-color: #b07400; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="marca">Ficha técnica · Diagnóstico eléctrico</div>
+    <h1>Jeep Wrangler JK 2009 · 2.8 CRD</h1>
+    <div class="sub">Motor VM Motori RA428 2.8L turbodiésel · Inyección Bosch Common Rail</div>
+    <div class="badges">
+      <span class="badge b-red">NO ARRANCA</span>
+      <span class="badge b-amber">ETC ACTIVO (rayo rojo)</span>
+      <span class="badge b-blue">FALLA INTERMITENTE</span>
+    </div>
+  </header>
+
+  <section>
+    <h2><span class="num">1</span> Vehículo</h2>
+    <div class="grid">
+      <div class="kv"><span class="k">Modelo</span><span class="v">Jeep Wrangler JK, 2009</span></div>
+      <div class="kv"><span class="k">Motor</span><span class="v">VM Motori RA428 2.8L CRD (4 cil, 16v)</span></div>
+      <div class="kv"><span class="k">Inyección</span><span class="v">Bosch Common Rail · ECU EDC16CP31</span></div>
+      <div class="kv"><span class="k">Transmisión</span><span class="v">Automática 545RFE (5 vel.)</span></div>
+      <div class="kv"><span class="k">Kilometraje</span><span class="v">≈ 320.000 km</span></div>
+      <div class="kv"><span class="k">Historial</span><span class="v">Varios dueños anteriores</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span> Modificaciones del vehículo</h2>
+    <ul>
+      <li>Amortiguadores y parachoques reforzados (vehículo más pesado). <strong>Dato general: no afecta el arranque ni la ETC.</strong></li>
+      <li>Luces adicionales instaladas tomando energía del ramal original (empalmes), <strong style="color:var(--red)">anteriores a la falla</strong>. Sospechoso de la causa raíz.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span> Síntoma actual</h2>
+    <ul>
+      <li>Motor de partida gira pero <strong>NO arranca</strong> (no inyecta combustible).</li>
+      <li>Luz <strong>ETC encendida</strong> (rayo rojo en el tablero).</li>
+      <li>Fallo intermitente: <em>“se arregla y se vuelve a dañar”</em>.</li>
+      <li>Scanner no arrojó códigos en el momento.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span> Historial (orden cronológico)</h2>
+    <ol class="historia">
+      <li><strong>Empalmes de luces adicionales</strong> instalados sobre el ramal original (anteriores a la falla).</li>
+      <li>Apareció el <strong>fallo intermitente original</strong>: ETC + no arranca. <strong style="color:var(--red)">Este problema es ANTERIOR al rectificado.</strong></li>
+      <li>El <strong>ramal eléctrico del motor ya estaba “muy maltratado”</strong> (preexistente).</li>
+      <li>Motor <strong>rectificado completo</strong> — daño colateral: manguera de combustible mal sujeta y ramal movido (empeoró la falla).</li>
+      <li>Se cambió el <strong>sensor de cigüeñal (CKP)</strong> por supuesta falla: <strong>el síntoma NO cambió</strong>.</li>
+      <li>Auto en campo con roedores (no confirmado que hayan mordido este ramal).</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span> Puntos críticos de este modelo</h2>
+
+    <div class="sospechoso">
+      <strong>SOSPECHOSO N.º 1 — Cableado y conector del sensor CKP (cigüeñal).</strong><br>
+      Cable quebradizo, conector que se afloja. Si la ECU no recibe señal CKP, corta la inyección y enciende la ETC. Coincide con todos los síntomas.
+    </div>
+
+    <ul>
+      <li><strong>Tierras G100 y G101</strong> en el block: al rectificar se sueltan y quedan flojas u oxidadas.</li>
+      <li><strong>Zona del ramal cerca del turbo:</strong> el calor cristaliza el aislante con los años (causa preexistente).</li>
+      <li><strong>Mangueras de combustible:</strong> revisar O-ring y abrazaderas (la entrada de aire al common-rail impide el arranque).</li>
+      <li><strong>TIPM</strong> (módulo de potencia): corrosión interna / falsos contactos.</li>
+      <li><strong>Empalmes de accesorios (luces)</strong> sobre el ramal original: cables pelados, empalmes flojos o cable sobrecargado. <strong>Anteriores a la falla.</strong></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">6</span> Hipótesis más probable</h2>
+    <div class="hip">
+      <span class="tag">Hipótesis 1 · causa raíz preexistente</span>
+      <p><strong>Cable dañado en el ramal del motor</strong> por empalmes de luces o calor del turbo (ambos anteriores al rectificado). Si el daño toca el cable del CKP → ETC + sin inyección.</p>
+    </div>
+    <div class="hip">
+      <span class="tag">Hipótesis 2</span>
+      <p>Tierra <strong>G100/G101 floja u oxidada</strong>.</p>
+    </div>
+    <div class="hip">
+      <span class="tag">Hipótesis 3</span>
+      <p><strong>Aire en el sistema common-rail</strong> por la manguera que se soltó (secundario, del rectificado).</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">7</span> Prueba rápida sugerida</h2>
+    <ul class="check">
+      <li>Verificar continuidad y aislamiento de los 3 cables del CKP, del conector hasta la ECU.</li>
+      <li>Verificar tensión en el conector CKP (alimentación 5V, masa y señal).</li>
+      <li>Revisar y desarmar los empalmes de las luces: aislar bien y retirar conexiones flojas.</li>
+      <li>Apretar y limpiar las tierras G100/G101.</li>
+      <li>Purgar el aire del filtro de combustible y apretar abrazaderas.</li>
+      <li>Proteger el ramal contra roedores (cinta anti-roedores o malla metálica): el campo ya mordió otro vehículo 3 veces.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="nota">
+      <span class="titulo">Nota para el mecánico</span>
+      La falla es <strong>anterior al rectificado</strong>: no buscar el daño solo en lo que se movió al desarmar el motor. Fallo intermitente = contacto que se corta con calor o vibración. Revisar primero los empalmes de luces (preexistentes) y el tramo del ramal cerca del turbo. <strong>NO cambiar piezas al azar.</strong><br><br>
+      <strong>Importante:</strong> el vehículo duerme a la intemperie en un campo con roedores que ya mordieron otro auto 3 veces. Reparar el ramal y además <strong>protegerlo contra roedores</strong> (cinta anti-roedores o malla metálica), o la falla volverá.
+    </div>
+  </section>
+
+  <footer>
+    <div class="sello">Diagnóstico · Tormento</div>
+    <div>Restauración y mecánica Jeep Wrangler JK · Motor 2.8 CRD</div>
+  </footer>
+
+</div>
+</body>
+</html>
